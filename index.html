@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!---CSS Files-->
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
-<body>
+<body class="dark">
     <div class="main-container">
         <div class="aside">
             <div class="logo">
@@ -19,23 +22,25 @@
             <div class="nav-toggler">
                 <span></span>
             </div>
-            <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" ><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#" ><i class="fa fa-comments"></i>Contact</a></li>
+            <ul class="navbar">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services" ><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <div class="main-content">
             <!--home-->
-            <section class="home section hidden">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello,my name is <span class="name">Wanjiru Charity</span></h3>
-                            <h3 class="my-profession">I am a <span class="typing">software developer</span></h3>
-                            <p>How can you maximize the potential of your sales pitch? In this guide, we'll reveal the secrets to ensuring your outreach is pitch-perfect...</p>
+                            <h3 class="my-profession">I'm a <span class="typing">software developer</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit iste temporibus explicabo, et rerum asperiores atque aliquam dolore quibusdam, aperiam laudantium corporis. Amet maiores nisi ratione saepe recusandae! 
+                            Odit mollitia commodi fugit labore iusto provident repellat cum officiis distinctio perspiciatis et voluptatum dignissimos molestias nobis, eos tempora, ad, esse alias suscipit non quos.</p>
+                            <a href="files/Resume.pdf" class="btn" download="Wanjiru's_Resume">Download CV</a>
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
                         <div class="home-img padd-15">
@@ -46,7 +51,7 @@
             </section>
 
             <!--About Us-->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -84,7 +89,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="files/Resume.pdf" class="btn" download="Wanjiru's_Resume">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -93,26 +98,17 @@
                                     <h2 class="title">Skills</h2>
                                     <div class="row">
                                         <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%"></div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
+                                            <h5>Python</h5>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 82%"></div>
-                                                <div class="skill-percent">82%</div>
-                                            </div>
+                                            <h5>HTML</h5>                       
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>       
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>JavaScript</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 65%"></div>
-                                                <div class="skill-percent">65%</div>
-                                            </div>
-                                        </div>
+                                        </div>                                  
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +185,7 @@
             </section>
 
             <!--Services-->
-            <section class="service section hidden" >
+            <section class="service section " id="services"> >
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -268,7 +264,7 @@
                 </div>
             </section>
             <!--Porfolio-->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -326,10 +322,91 @@
                     </div>
                 </div>
             </section>
+
+            <!--Contact-->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="contact-text padd-15">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ex necessitatibus sint minima voluptatibus, magni cum nesciunt autem iusto expedita iste eaque est earum non asperiores sit aspernatur nulla nisi, rerum voluptas delectus. Totam cum dolor necessitatibus iste? Modi fugiat repudiandae eos eaque illo libero doloremque nostrum, fugit eius omnis voluptas, iste ipsa aliquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                    <div class="row">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+ 254 101554824</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Nairobi,Kenya</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>cwanjiru@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-africa"></i></div>
+                            <h4>Website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                    </div> 
+
+                    <h3 class="contact-title padd-15">Send Inquiry</h3>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                            <form onsubmit="sendEmail(); reset(); return false;">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="email" class="form-control" placeholder="Email">     
+                                <textarea id="message" class="form-control" rows="4" placeholder="How can I help you?"></textarea>
+                                <button type="submit" class="btn">Send</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                
+            </section>
+            <div class="style-switcher">
+                <div class="day-night s-icon">
+                    <i class="fas"></i>
+                </div>
+            </div>
+            
         </div>
     </div>
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "carolciru393@gmail.com",
+                Password : "password",
+                To : 'carolciru393@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Inquiry",
+                Body : "This is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+
+    </script>
     <!-- JS Files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+
 </body>
 </html>
